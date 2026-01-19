@@ -35,11 +35,15 @@
       margin-top: 0;
     }
 
-    hr {
-      margin: 40px 0;
+    /* FULL-WIDTH THIN RULE */
+    .full-width {
       border: none;
-      border-top: 1px solid #ddd;
-      width: 100%;
+      border-top: 0.5px solid #ddd;
+      width: 100vw;
+      margin: 40px 0;
+      position: relative;
+      left: 50%;
+      margin-left: -50vw;
     }
 
     h2 {
@@ -82,14 +86,18 @@
 </head>
 
 <body>
+
+  <!-- HEADER -->
+  <header class="container">
+    <h1>KEVIN SAJI</h1>
+    <p>Political essays on democracy, power, and political economy</p>
+  </header>
+
+  <!-- EDGE-TO-EDGE LINE -->
+  <hr class="full-width">
+
+  <!-- CONTENT -->
   <div class="container">
-    <header>
-      <h1>KEVIN SAJI</h1>
-      <p>Political essays on democracy, power, and political economy</p>
-    </header>
-
-    <hr>
-
     <section>
       <h2>ESSAYS</h2>
       <ul>
@@ -113,6 +121,8 @@
       © KEVIN SAJI
     </footer>
   </div>
+
 </body>
 </html>
+
 
